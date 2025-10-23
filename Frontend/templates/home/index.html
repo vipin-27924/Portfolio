@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin Kumar - Android Developer & Programmer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="WhatsApp Image 2025-05-28 at 12.47.41 AM.jpeg" type="image/png"> 
+</head>
+<body class="antialiased">
+
+    <header id="home" class="bg-black/30 backdrop-blur-lg sticky top-0 z-50 border-b border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Portfolio</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-lg">
+            <a href="#about" class="block py-3 px-4 text-sm text-gray-200 hover:bg-gray-800 nav-link-mobile">About</a>
+            <a href="#skills" class="block py-3 px-4 text-sm text-gray-200 hover:bg-gray-800 nav-link-mobile">Skills</a>
+            <a href="#projects" class="block py-3 px-4 text-sm text-gray-200 hover:bg-gray-800 nav-link-mobile">Projects</a>
+            <a href="#contact" class="block py-3 px-4 text-sm text-gray-200 hover:bg-gray-800 nav-link-mobile">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <section class="text-center min-h-[90vh] flex flex-col justify-center items-center py-20">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-4">
+                Hi, I'm <span class="text-gradient">Vipin Kumar</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-medium text-gray-300 mb-6">Android Developer & Programming Enthusiast</h2>
+            <p class="text-md md:text-lg text-gray-400 max-w-3xl mx-auto mb-10">
+                A passionate 2nd-year Computer Science student at Galgotias University, specializing in building modern Android applications and solving complex problems with a strong foundation in DSA.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-sky-500/20">
+                    View My Work
+                </a>
+                <a href="mailto:Vipinkumar27924@gmail.com" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                    Email Me
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 fade-in-section">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-white mb-16">About <span class="text-gradient">Me</span></h2>
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="../../static/myimage.jpeg" alt="Vipin Kumar" class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-gray-700">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-300 space-y-5 text-center md:text-left">
+                    <p>I'm a dedicated developer with a love for clean code and beautiful design. My journey into programming started a few years ago, and I've been honing my skills in mobile development and core computer science principles ever since.</p>
+                    <p>My primary expertise lies in <b class="text-white">Android development using Kotlin and Jetpack Compose</b>, along with strong skills in <b class="text-white">Data Structures and Algorithms</b>. I'm also proficient in backend development with Python and database management with MongoDB.</p>
+                    <div class="mt-8 glass-card p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-graduation-cap text-sky-400"></i>Education</h3>
+                        <div class="education-item">
+                            <h4 class="text-lg font-semibold text-sky-400">Galgotias University</h4>
+                            <p class="text-gray-400">B.Tech in Computer Science</p>
+                            <p class="text-gray-500 text-sm">2024 - 2028 | Greater Noida, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 fade-in-section">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-white mb-16">My <span class="text-gradient">Skills</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-mobile-alt text-sky-400"></i>Mobile Development</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Kotlin</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Android SDK</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Jetpack Compose</span>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-code text-sky-400"></i>Programming & DSA</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Java</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Python</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Data Structures</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Algorithms</span>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-server text-sky-400"></i>Backend & Database</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">Python (FastAPI)</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">PostgreSQL</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">REST APIs</span>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-laptop-code text-sky-400"></i>Web Basics</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">HTML/CSS</span>
+                        <span class="bg-sky-500/20 text-sky-300 font-medium px-4 py-2 rounded-lg">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="py-24 fade-in-section">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-white mb-16">My <span class="text-gradient">Projects</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="project-card glass-card rounded-xl overflow-hidden group">
+                    <img src="../../static/weatherlogo.png" alt="Android Task Manager" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Weather Application</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">A productivity app built with Kotlin and Jetpack Compose that helps The User To Get The RealTime Weather Details Of A Selected Area</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Kotlin</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Jetpack Compose</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Room DB</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                           <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold text-sm flex items-center gap-2"><i class="fab fa-github"></i> GitHub</a>
+                           <a href="#" class="text-gray-400 hover:text-white font-semibold text-sm flex items-center gap-2">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project-card glass-card rounded-xl overflow-hidden group">
+                    <img src="../../static/whatsappLogo.webp" alt="WhatsApp" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">WhatsApp Clone</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">A Application Which Helps You Communicate With Your Loved Ones . A fully Functional WhatsApp Clone Android Application</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Kotlin</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Jetpack Compose</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Firebase</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                           <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold text-sm flex items-center gap-2"><i class="fab fa-github"></i> GitHub</a>
+                           <a href="#" class="text-gray-400 hover:text-white font-semibold text-sm flex items-center gap-2">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project-card glass-card rounded-xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/3776ab/0d1117?text=E-commerce+API" alt="E-commerce Backend API" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">E-commerce Backend API</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">A RESTful API for an e-commerce platform built with Python, featuring product management and user authentication.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">Python</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">FastAPI</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                           <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold text-sm flex items-center gap-2"><i class="fab fa-github"></i> GitHub</a>
+                           <a href="#" class="text-gray-400 hover:text-white font-semibold text-sm flex items-center gap-2">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 fade-in-section">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-white mb-16">Get In <span class="text-gradient">Touch</span></h2>
+            <div class="max-w-3xl mx-auto glass-card p-8 sm:p-12 rounded-xl">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+                    <p class="text-gray-400 mb-8 max-w-md mx-auto">I'm currently looking for internship opportunities and collaborative projects. My inbox is always open. Feel free to reach out!</p>
+                    <a href="../contactme/contactMe.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-sky-500/20 mb-10">
+                        Say Hello
+                    </a>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com/vipin-2792" class="text-gray-400 hover:text-sky-400 transition-colors text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vipin-kumar-864165342/" class="text-gray-400 hover:text-sky-400 transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/VipinKu65596451" class="text-gray-400 hover:text-sky-400 transition-colors text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/__vipin__kumar____/?next=%2F" class="text-gray-400 hover:text-sky-400 transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <form id="contactForm" action="/submit-form" method="POST" class="hidden">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+        </form>
+
+    </main>
+    
+    <footer class="text-center py-8 border-t border-white/10">
+        <div class="container mx-auto text-gray-500 text-sm">
+            <p>&copy; 2024 Vipin Kumar. Designed & Built with ❤️</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

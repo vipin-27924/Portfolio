@@ -1,0 +1,60 @@
+/* Custom CSS for Vipin Kumar Portfolio */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117; 
+    color: #c9d1d9; 
+    overflow-x: hidden;
+}
+
+/* Background Aurora Effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: 
+        radial-gradient(circle at 15% 25%, rgba(59, 130, 246, 0.15), transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(139, 92, 246, 0.15), transparent 40%);
+    animation: aurora 15s infinite alternate;
+}
+
+@keyframes aurora {
+    from {
+        transform: rotate(0deg) scale(1.2);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+    background: rgba(22, 27, 34, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fade-In Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1), transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
